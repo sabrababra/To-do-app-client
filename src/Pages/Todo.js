@@ -97,7 +97,7 @@ const Todo = () => {
                     </div>
                     {/* add section */}
                     <form onSubmit={handleSubmit} className='mt-5 flex gap-5'>
-                        <input name='name' type="text" placeholder="Type here" className="input input-bordered input-primary w-full " />
+                        <input name='name' type="text" placeholder="Type here" className="input input-bordered input-primary w-full req " required />
                         <button className='btn  btn-primary font-bold '><GoPlus className='mr-1 w-6 h-6' /> Add todo </button>
                     </form>
                     {/* lists */}
