@@ -9,7 +9,7 @@ const TodoCard = ({ item,getData }) => {
     const [edit,setEdit]=useState(false);
 
     const handleDelete=()=>{
-        fetch(`http://localhost:5000/deletetodo/${_id}`, {
+        fetch(`https://todo-app-server-seven.vercel.app/deletetodo/${_id}`, {
             method: 'DELETE',
             headers: {
                 'content-type': 'application/json',
@@ -39,7 +39,7 @@ const TodoCard = ({ item,getData }) => {
 
         console.log(addData);
 
-        fetch(`http://localhost:5000/updatetodo/${_id}`, {
+        fetch(`https://todo-app-server-seven.vercel.app/updatetodo/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',
@@ -68,7 +68,7 @@ const TodoCard = ({ item,getData }) => {
 
         console.log(addData);
 
-        fetch(`http://localhost:5000/updatetodo/${_id}`, {
+        fetch(`https://todo-app-server-seven.vercel.app/updatetodo/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',

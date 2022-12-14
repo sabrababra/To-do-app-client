@@ -9,7 +9,7 @@ const Todo = () => {
     const [completeData,setCompleteData]=useState([]);
     const [pendingData,setPendingData]=useState([]);
     const getData = () => {
-        fetch(`http://localhost:5000/gettododata?email=${user?.email}`)
+        fetch(`https://todo-app-server-seven.vercel.app/gettododata?email=${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setTodoData(data)
@@ -36,7 +36,7 @@ const Todo = () => {
 
         console.log(addData);
 
-        fetch('http://localhost:5000/addtodo', {
+        fetch('https://todo-app-server-seven.vercel.app/addtodo', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

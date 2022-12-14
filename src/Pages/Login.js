@@ -10,7 +10,7 @@ const Login = () => {
     const googleProvider = new GoogleAuthProvider();
     const location = useLocation();
     const navigate = useNavigate();
-    const from = location.state?.from?.pathname || "/";
+    const from = location.state?.from?.pathname || "/todo";
 
     const handleGoogle = () => {
         googleSignIn(googleProvider)
